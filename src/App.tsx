@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import spidex from '@spidex/sdk';
+
+(window as any).spidex = spidex
 
 function App() {
+  console.log('spidex', spidex.public.getDeals);
   return (
     <div className="App">
       <header className="App-header">
