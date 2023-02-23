@@ -24,5 +24,6 @@ module.exports = function override(config) {
       fullySpecified: false, // disable the behavior
     },
   });
+  config.ignoreWarnings = [/Failed to parse source map/];
   return config;
 };
